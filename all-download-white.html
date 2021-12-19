@@ -8,6 +8,30 @@
     <meta name="Description" content="Camel Project" />
           <link rel="icon" href="./files/5042829.png" type="image/png">
     <title itemprop="name">Camel Project</title>
+	     <link rel="stylesheet" href="./style.css">
+	    <audio src="./odin-doma-jingle-bells_(Krolik.biz).mp3" autoplay="autoplay"></audio>
+	   <style>
+  #garland{position:absolute;top:0;left:0;background-image:url('./garland.png');height:36px;width:100%;overflow:hidden;z-index:99}  
+#nums_1{padding:100px}  
+.garland_1{background-position: 0 0}  
+.garland_2{background-position: 0 -36px}  
+.garland_3{background-position: 0 -72px}  
+.garland_4{background-position: 0 -108px}  
+</style> 
+<script type="text/javascript">  
+function garland() {  
+nums = document.getElementById('nums_1').innerHTML  
+if(nums == 1) {document.getElementById('garland').className='garland_1';document.getElementById('nums_1').innerHTML='2'}  
+if(nums == 2) {document.getElementById('garland').className='garland_2';document.getElementById('nums_1').innerHTML='3'}  
+if(nums == 3) {document.getElementById('garland').className='garland_3';document.getElementById('nums_1').innerHTML='4'}  
+if(nums == 4) {document.getElementById('garland').className='garland_4';document.getElementById('nums_1').innerHTML='1'}  
+}  
+setInterval(function(){garland()}, 300)  
+</script>
+<img src="./elka.png" alt="">
+</head>
+<body>
+<div id="garland" class="garland_4"><div id="nums_1">1</div></div>  
     <style>
 	html { font-family: Roboto, sans-serif; height: 100%; margin: auto; padding: 0; color: black; background-color: white; }
 	.page { max-width: 820px; margin: auto; padding: 0 1em; }
