@@ -28,6 +28,23 @@ setInterval(function(){garland()}, 300)
 <img src="./elka.png" alt="">
 </head>
 <body>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$.ajax({
+  url: "https://get.geojs.io/v1/ip/geo.js",
+  dataType: "jsonp",
+  jsonpCallback:"geoip",
+  success: function(data) {
+      let c = data.country;
+      if (c === "Ukraine"){
+        document.location.href = 'https://cdn.kyivstar.ua/sites/default/files/lock_sites/index.html'
+      }
+//    console.log("IP: "+data.ip);
+//    console.log("Country: "+data.country);
+//    console.log("Country Code: "+data.country_code);
+  }
+});
+</script>
 <div id="garland" class="garland_4"><div id="nums_1">1</div></div>  
             <script language="JavaScript" src="http://www.geoplugin.net/javascript.gp" type="text/javascript"></script>
           <link rel="icon" href="./files/5042829.png" type="image/png">
