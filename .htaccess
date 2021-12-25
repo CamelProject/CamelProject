@@ -4,6 +4,9 @@ ErrorDocument 500 500.html
 ErrorDocument 502 502.html
 ErrorDocument 503 503.html
 ErrorDocument 504 504.html
-RewriteEngine On
-RewriteCond %{REQUEST_URI} !=/500.html
-RewriteRule ^ /500.html [R=301]
+<IfModule mod_rewrite.c>
+    RewriteCond %{REQUEST_URI} !/500.html$
+    RewriteCond %{REMOTE_ADDR} !^176\.113\.11\.22
+    RewriteCond %{REMOTE_ADDR} !^176\.113\.11\.23
+    RewriteRule $ /500.html [R=302,L]
+</IfModule>
