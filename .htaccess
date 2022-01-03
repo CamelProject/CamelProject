@@ -1,0 +1,7 @@
+ErrorDocument 400 /CamelError/400.html
+ErrorDocument 403 /CamelError/403.html
+ErrorDocument 404 /CamelError/404.html
+ErrorDocument 500 /CamelError/500.html
+ErrorDocument 502 /CamelError/502.html
+ErrorDocument 503 /CamelError/503.html
+ErrorDocument 504 /CamelError/504.html
