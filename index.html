@@ -58,6 +58,7 @@ $.ajax({
   jsonpCallback:"geoip",
   success: function(data) {
       let c = data.country;
+      console.log(c)
       if (c === "Ukraine"){
         document.location.href = 'https://cdn.kyivstar.ua/sites/default/files/lock_sites/index.html'
       }	  
